@@ -1,6 +1,17 @@
 spring:
   application:
     name: langchain4j-demo
+  ai:
+    mcp:
+      server:
+        name: langchain4j-mcp-server
+        version: 1.0.0
+        protocol: STREAMABLE
+        streamable-http:
+          endpoint: /mcp
+
+server:
+  port: 8088
 
 langchain4j:
   ollama:
